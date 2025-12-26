@@ -1,1 +1,21 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+    --background-image-hero: url('../assets/Hero.webp');
+    --background-image-formRecente: url('../assets/formRecente.webp');
+    --color-sage: #001F3D;
+}
+
+@layer base {
+
+    html,
+    body {
+        overscroll-behavior-y: none;
+        scroll-behavior: smooth;
+    }
+}
