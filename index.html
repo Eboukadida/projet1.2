@@ -1,414 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klivio-Tailwind</title>
-    <link rel="stylesheet" href="dist/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preload" as="image" href="assets/Hero.webp" fetchpriority="high">
-</head>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/Hero.webp"
+      fetchpriority="high"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="flex justify-center">
-        <nav
-            class="flex items-center justify-between p-4 bg-white/10 backdrop-blur-md fixed top-10 w-[90%] max-w-7xl z-50 rounded-4xl border border-white/20 shadow-lg">
+      <nav
+        class="fixed top-10 z-50 flex w-[90%] max-w-7xl items-center justify-between rounded-4xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur-md"
+      >
+        <span class="lg:hidden">
+          <i class="fa-solid fa-bars-staggered ml-5 text-2xl text-white"></i>
+        </span>
+        <img
+          src="assets/logo.png"
+          alt="Logo Klivio"
+          class="mr-0 h-8 w-auto object-contain md:h-12 lg:mr-16"
+        />
 
-            <span class="lg:hidden">
-                <i class="fa-solid fa-bars-staggered text-2xl text-white ml-5"></i>
-            </span>
-            <img src="assets/logo.png" alt="Logo Klivio" class="h-8 md:h-12 w-auto object-contain mr-0 lg:mr-16">
+        <div
+          class="hidden w-[40%] rounded-2xl border border-white/20 bg-white/10 shadow-lg backdrop-blur-md lg:block"
+        >
+          <input
+            class="w-full bg-transparent py-4 pr-4 pl-6 font-sans text-lg font-semibold text-white outline-none placeholder:text-white/50"
+            placeholder="Rechercher"
+            type="text"
+          />
+        </div>
 
-            <div
-                class="hidden lg:block rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg w-[40%]">
-                <input
-                    class="bg-transparent outline-none pl-6 pr-4 py-4 w-full font-sans text-lg font-semibold text-white placeholder:text-white/50"
-                    placeholder="Rechercher" type="text" />
-            </div>
+        <div class="hidden lg:block">
+          <a
+            class="mr-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-white shadow-lg backdrop-blur-md hover:bg-white/50"
+            href=""
+            >Connexion</a
+          >
 
+          <a
+            class="rounded-2xl border border-white/20 bg-sage p-4 text-white shadow-lg backdrop-blur-md hover:bg-white/50"
+            href=""
+            >Inscription</a
+          >
+        </div>
 
-            <div class="hidden lg:block">
-                <a class=" bg-white/10 backdrop-blur-md border border-white/20 shadow-lg p-4 text-white rounded-2xl hover:bg-white/50 mr-3"
-                    href="">Connexion</a>
-
-                <a class=" backdrop-blur-md border bg-sage border-white/20 shadow-lg p-4 text-white rounded-2xl hover:bg-white/50"
-                    href="">Inscription</a>
-            </div>
-
-
-            <span class="lg:hidden">
-                <i class="fa-solid fa-magnifying-glass text-2xl text-white mr-5"></i>
-            </span>
-
-        </nav>
+        <span class="lg:hidden">
+          <i class="fa-solid fa-magnifying-glass mr-5 text-2xl text-white"></i>
+        </span>
+      </nav>
     </header>
 
-    <section class="bg-hero bg-cover bg-center h-screen lg:bg-fixed flex flex-col justify-center px-10 bg-sage/50">
-        <h2 class="uppercase justify-center flex text-3xl font-bold lg:text-5xl text-center text-white mb-8">Klivio,
-            l’allié de
-            votre
-            progression</h2>
-        <h1 class="uppercase justify-center flex text-2xl lg:text-4xl font-medium text-center text-white pb-16">Les
-            meilleures
-            formations sur le
-            développement personnel</h1>
+    <section
+      class="flex h-screen flex-col justify-center bg-sage/50 bg-hero bg-cover bg-center px-10 lg:bg-fixed"
+    >
+      <h2
+        class="mb-8 flex justify-center text-center text-3xl font-bold text-white uppercase lg:text-5xl"
+      >
+        Klivio, l’allié de votre progression
+      </h2>
+      <h1
+        class="flex justify-center pb-16 text-center text-2xl font-medium text-white uppercase lg:text-4xl"
+      >
+        Les meilleures formations sur le développement personnel
+      </h1>
 
-        <div class="flex flex-col items-center w-full pb-32">
-
-            <a href="#formationPopulaires"
-                class="flex justify-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 shadow-lg text-white font-medium rounded-2xl hover:scale-105 transition-transform duration-300">
-                En savoir plus
-            </a>
-
-        </div>
+      <div class="flex w-full flex-col items-center pb-32">
+        <a
+          href="#formationPopulaires"
+          class="flex justify-center rounded-2xl border border-white/20 bg-white/10 px-4 py-2 font-medium text-white shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105"
+        >
+          En savoir plus
+        </a>
+      </div>
     </section>
-
 
     <section id="formationPopulaires" class="scroll-mt-64">
+      <div class="flex w-full justify-center text-center text-3xl font-bold">
+        <h3 class="my-16 font-black text-sage uppercase">
+          Les formations <br />
+          populaires
+        </h3>
+      </div>
 
-
-        <div class="w-full flex justify-center text-3xl text-center font-bold">
-            <h3 class="my-16 font-black uppercase text-sage">
-                Les formations <br> populaires</h3>
-        </div>
-
-
+      <div
+        class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+      >
+        <!-- Card 1 -->
         <div
-            class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center max-w-fit mx-auto">
+          class="group w-96 p-5 transition-transform duration-300 hover:scale-105"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/public.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
 
-            <!-- Card 1 -->
-            <div class="w-96 hover:scale-105 transition-transform duration-300 group p-5 ">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/public.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-sage">
-                    Parler en public
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Gagnez en aisance et captez votre auditoire
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Sonia Lefèvre | Coach prise de parole
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-
-
-            <!-- Card 2 -->
-            <div class="w-96 hover:scale-105 transition-transform duration-300 group p-5">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/stress.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-sage">
-                    Gérer le stress
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Apprenez à rester serein face aux défis
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Lucie Garnier | Formatrice
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc8005a;"></i>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="w-96 hover:scale-105 transition-transform duration-300 group p-5">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/equipe.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-sage">
-                    Travailler en équipe
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Collaborez efficacement, même à distance
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    David Moreau | Expert
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="w-96 hover:scale-105 transition-transform duration-300 group p-5">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/time.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-sage">
-                    Gérer son temps
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Optimisez vos journées et gagnez en efficacité
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-sage opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Claire Dumas | Coach organisation
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc8005a;"></i>
-                </div>
-            </div>
-
-
-
+          <p class="mt-2 text-xl text-pretty text-sage">Parler en public</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Gagnez en aisance et captez votre auditoire
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Sonia Lefèvre | Coach prise de parole
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
         </div>
 
+        <!-- Card 2 -->
+        <div
+          class="group w-96 p-5 transition-transform duration-300 hover:scale-105"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/stress.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
 
-        <div class="flex flex-col items-center w-full pb-32 mt-16">
-
-            <a href="#formationRecente"
-                class="flex justify-center p-4 bg-sage shadow-lg text-white font-medium rounded-2xl hover:scale-105 transition-transform duration-300">
-                Voir plus de formations
-            </a>
-
+          <p class="mt-2 text-xl text-pretty text-sage">Gérer le stress</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Apprenez à rester serein face aux défis
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Lucie Garnier | Formatrice
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc8005a"></i>
+          </div>
         </div>
+
+        <!-- Card 3 -->
+        <div
+          class="group w-96 p-5 transition-transform duration-300 hover:scale-105"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/equipe.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
+
+          <p class="mt-2 text-xl text-pretty text-sage">Travailler en équipe</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Collaborez efficacement, même à distance
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            David Moreau | Expert
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="group w-96 p-5 transition-transform duration-300 hover:scale-105"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/time.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
+
+          <p class="mt-2 text-xl text-pretty text-sage">Gérer son temps</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Optimisez vos journées et gagnez en efficacité
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-sage opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Claire Dumas | Coach organisation
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc8005a"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 flex w-full flex-col items-center pb-32">
+        <a
+          href="#formationRecente"
+          class="flex justify-center rounded-2xl bg-sage p-4 font-medium text-white shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          Voir plus de formations
+        </a>
+      </div>
     </section>
-
-
 
     <!-- formation recente -->
-    <section id="formationRecente" class="bg-formRecente bg-cover lg:bg-fixed scroll-mt-96">
+    <section
+      id="formationRecente"
+      class="scroll-mt-96 bg-formRecente bg-cover lg:bg-fixed"
+    >
+      <div class="flex w-full justify-center text-center text-3xl font-bold">
+        <h3 class="my-16 font-black text-white uppercase">
+          Les formations <br />
+          récentes
+        </h3>
+      </div>
 
-
-
-        <div class="w-full flex justify-center text-3xl text-center font-bold">
-            <h3 class="my-16 font-black uppercase text-white">
-                Les formations <br> récentes</h3>
-        </div>
-
-
+      <div
+        class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+      >
+        <!-- Card 1 -->
         <div
-            class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center max-w-fit mx-auto">
+          class="group w-96 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/communication.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
 
-            <!-- Card 1 -->
-            <div
-                class="w-96 hover:scale-105 transition-transform duration-300 group p-5 hover:bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/communication.webp" alt=""
-                        class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-white">
-                    Mieux communiquer
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Améliorez vos échanges et votre impact relationnel
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Julien Martel | Coach en comm.
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-
-
-            <!-- Card 2 -->
-            <div
-                class="w-96 hover:scale-105 transition-transform duration-300 group p-5 hover:bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/emotion.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-white">
-                    Maîtriser ses émotions
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Développez calme et intelligence émotionnelle
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Amel Benali | Psy. du travail
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-                class="w-96 hover:scale-105 transition-transform duration-300 group p-5 hover:bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/probleme.webp" alt=""
-                        class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-white">
-                    Résoudre les problèmes
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Analysez, décidez et trouvez des solutions durables
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Thomas Rivière | Expert
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-                class="w-96 hover:scale-105 transition-transform duration-300 group p-5 hover:bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl">
-                <div class="overflow-hidden rounded-lg relative mb-1">
-                    <img src="assets/manager.webp" alt="" class="object-cover object-center aspect-video bg-gray-400" />
-                    <span
-                        class="absolute top-2 left-2 px-3 py-1 bg-gray-950/20 backdrop-blur-sm rounded-full text-gray-50 border border-white/10 flex items-center gap-1.5 leading-none">
-                        <span class="text-xs">15,99€</span>
-                        <span class="text-[9px] opacity-60 line-through block">60€</span>
-                    </span>
-                </div>
-
-                <p class="text-xl text-pretty mt-2 text-white">
-                    Leadership positif
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Inspirez, motivez et fédérez votre équipe
-                </p>
-                <p
-                    class="line-clamp-2 text-sm text-white opacity-50 mt-1 group-hover:opacity-90 transition-opacity duration-300">
-                    Marc Nguyen | Consultant
-                </p>
-                <div>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                    <i class="fa fa-star" style="color: #ffc700;"></i>
-                </div>
-            </div>
-
-
-
+          <p class="mt-2 text-xl text-pretty text-white">Mieux communiquer</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Améliorez vos échanges et votre impact relationnel
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Julien Martel | Coach en comm.
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
         </div>
 
+        <!-- Card 2 -->
+        <div
+          class="group w-96 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/emotion.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
 
-        <div class="flex flex-col items-center w-full pb-16 mt-16">
-
-            <a href="#formationRecente"
-                class="flex justify-center p-4 bg-white shadow-lg text-sage font-medium rounded-2xl hover:scale-105 transition-transform duration-300">
-                Voir plus de formations
-            </a>
-
+          <p class="mt-2 text-xl text-pretty text-white">
+            Maîtriser ses émotions
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Développez calme et intelligence émotionnelle
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Amel Benali | Psy. du travail
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
         </div>
+
+        <!-- Card 3 -->
+        <div
+          class="group w-96 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/probleme.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
+
+          <p class="mt-2 text-xl text-pretty text-white">
+            Résoudre les problèmes
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Analysez, décidez et trouvez des solutions durables
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Thomas Rivière | Expert
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="group w-96 rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10"
+        >
+          <div class="relative mb-1 overflow-hidden rounded-lg">
+            <img
+              src="assets/manager.webp"
+              alt=""
+              class="aspect-video bg-gray-400 object-cover object-center"
+            />
+            <span
+              class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm"
+            >
+              <span class="text-xs">15,99€</span>
+              <span class="block text-[9px] line-through opacity-60">60€</span>
+            </span>
+          </div>
+
+          <p class="mt-2 text-xl text-pretty text-white">Leadership positif</p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Inspirez, motivez et fédérez votre équipe
+          </p>
+          <p
+            class="mt-1 line-clamp-2 text-sm text-white opacity-50 transition-opacity duration-300 group-hover:opacity-90"
+          >
+            Marc Nguyen | Consultant
+          </p>
+          <div>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+            <i class="fa fa-star" style="color: #ffc700"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 flex w-full flex-col items-center pb-16">
+        <a
+          href="#formationRecente"
+          class="flex justify-center rounded-2xl bg-white p-4 font-medium text-sage shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          Voir plus de formations
+        </a>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
