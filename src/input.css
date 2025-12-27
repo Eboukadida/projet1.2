@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-    --background-image-hero: url('../assets/hero.webp');
-    --background-image-formRecente: url('../assets/formRecente.webp');
-    --color-sage: #001F3D;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --background-image-hero: url("../assets/hero.webp");
+  --background-image-formRecente: url("../assets/formRecente.webp");
+  --color-sage: #001f3d;
+  --color-mywhite: #ffffff;
+  --color-myCTA: #14843f;
 }
 
 @layer base {
-    html,
-    body {
-        overscroll-behavior-y: none;
-        scroll-behavior: smooth;
-    }
+  html,
+  body {
+    overscroll-behavior-y: none;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
