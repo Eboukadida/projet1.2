@@ -4,7 +4,6 @@ AOS.init({
 
 
 /*
-
 if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
 }
