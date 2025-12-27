@@ -4,6 +4,8 @@
 @theme {
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --background-image-formRecente: url("../assets/formRecente.webp");
+  --background-image-avantages: url("../assets/avantages.png");
+  --background-image-become: url("../assets/become.png");
   --color-sage: #001f3d;
   --color-mywhite: #ffffff;
   --color-myCTA: #14843f;
