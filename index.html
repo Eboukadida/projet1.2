@@ -47,7 +47,7 @@
       class="flex h-screen flex-col justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-formRecente)] bg-cover bg-center px-10 lg:bg-fixed">
       <h2 class="mb-8 flex justify-center text-center text-3xl font-bold text-mywhite uppercase lg:text-5xl"
         data-aos="fade-up" data-aos-duration="2000">
-        Klivio, l’allié de votre progression
+        <span class="text-myCTA">Klivio</span>, l’allié de votre progression
       </h2>
       <h1 class="flex justify-center pb-16 text-center text-2xl font-medium text-mywhite uppercase lg:text-4xl"
         data-aos="fade-up" data-aos-duration="2500">
@@ -56,10 +56,19 @@
 
       <div class="flex w-full flex-col items-center pb-32">
         <a href="#formationPopulaires"
-          class="flex justify-center rounded-2xl border border-white/20 bg-white/10 px-4 py-2 font-medium text-mywhite shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105"
+          class="flex justify-center rounded-2xl border border-white/20 bg-white/10 px-4 py-2 font-medium text-mywhite shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 uppercase tracking-widest"
           data-aos="fade-up" data-aos-duration="3000">
           En savoir plus
         </a>
+      </div>
+
+      <div class="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <span class="text-mywhite text-md mb-16 uppercase tracking-widest">Découvrir</span>
+        <div class="animate-bounce">
+          <svg class="w-6 h-6 text-mywhite" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
       </div>
     </section>
 
@@ -74,8 +83,8 @@
       <div
         class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
         <!-- Card 1 -->
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
-          <div class="group w-96 cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+        <div class="w-96" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/public.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -104,8 +113,8 @@
 
         <!-- Card 2 -->
 
-        <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
-          <div class="group w-96 cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+        <div class="w-96" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/stress.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -133,8 +142,8 @@
         </div>
 
         <!-- Card 3 -->
-        <div data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300">
-          <div class="group w-96 cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+        <div class="w-96" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300">
+          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/equipe.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -162,8 +171,8 @@
         </div>
 
         <!-- Card 4 -->
-        <div data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
-          <div class="group w-96 cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+        <div class="w-96" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
+          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/time.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -200,7 +209,7 @@
     </section>
 
     <!-- formation recente -->
-    <section id="formationRecente" class="scroll-mt-52 bg-formRecente bg-cover bg-center lg:bg-fixed">
+    <section id="formationRecente" class="w-full scroll-mt-52 bg-formRecente bg-cover bg-center lg:bg-fixed">
       <div class="flex w-full justify-center text-center text-3xl font-bold">
         <h3 class="my-16 font-black text-mywhite uppercase">
           Les formations <br />
@@ -210,11 +219,11 @@
 
       <div
         class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-        <!-- Card 1 -->
 
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
-          <div
-            class="group w-96 cursor-pointer rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10">
+        <!-- Card 1 -->
+        <div class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
+          data-aos-duration="1500" data-aos-offset="300">
+          <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/communication.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -246,9 +255,9 @@
         </div>
 
         <!-- Card 2 -->
-        <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
-          <div
-            class="group w-96 cursor-pointer rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10">
+        <div class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
+          data-aos-duration="2000" data-aos-offset="300">
+          <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/emotion.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -281,9 +290,9 @@
 
 
         <!-- Card 3 -->
-        <div data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300">
-          <div
-            class="group w-96 cursor-pointer rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10">
+        <div class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
+          data-aos-duration="2500" data-aos-offset="300">
+          <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/probleme.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -316,9 +325,9 @@
 
 
         <!-- Card 4 -->
-        <div data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
-          <div
-            class="group w-96 cursor-pointer rounded-2xl border border-white/20 p-5 shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10">
+        <div class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
+          data-aos-duration="3000" data-aos-offset="300">
+          <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
               <img src="assets/manager.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
               <span
@@ -364,56 +373,63 @@
       <div class="flex w-full justify-center text-center text-3xl font-bold">
         <h3 class="my-16 font-black text-sage uppercase">Avis clients</h3>
       </div>
-      <div class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2" data-aos="fade-down"
-        data-aos-offset="300" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2">
         <!-- Card Avis 1 -->
+        <div data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+          <div
+            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105! hover:bg-white/10 xl:w-lg">
+            <div>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
 
-        <div
-          class="group flex w-96 cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105! hover:bg-white/10 xl:w-lg">
-          <div>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
+            <p class="py-5">
+              "J’ai trouvé le parcours très bien structuré : vidéos courtes,
+              quizzes pertinents et projets pratiques qui m’ont permis
+              d’appliquer immédiatement les notions. L’interface est claire et
+              la progression est motivante — parfait pour se former en
+              autonomie."
+            </p>
 
-          <p class="py-5">
-            "J’ai trouvé le parcours très bien structuré : vidéos courtes,
-            quizzes pertinents et projets pratiques qui m’ont permis
-            d’appliquer immédiatement les notions. L’interface est claire et
-            la progression est motivante — parfait pour se former en
-            autonomie."
-          </p>
-
-          <div class="flex items-center gap-5">
-            <img class="h-10 w-10 rounded-full" src="assets/juliette.png" alt="photo d'une cliente" />
-            <h5>Juliette</h5>
+            <div class="flex items-center gap-5">
+              <img class="h-10 w-10 rounded-full" src="assets/juliette.png" alt="photo d'une cliente" />
+              <h5>Juliette</h5>
+            </div>
           </div>
         </div>
+
 
         <!-- Card Avis 2 -->
-        <div
-          class="group flex w-96 cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10 xl:w-lg">
-          <div>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </div>
 
-          <p class="py-5">
-            "Bon équilibre entre théorie et pratique. Les chapitres sont
-            détaillés, et le support et les corrections automatiques ont
-            vraiment aidé. Idéal pour démarrer et progresser rapidement."
-          </p>
+        <div data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+          <div
+            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10 xl:w-lg">
+            <div>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
 
-          <div class="flex items-center gap-5">
-            <img class="h-10 w-10 rounded-full" src="assets/camille.png" alt="photo d'une cliente" />
-            <h5>Camille</h5>
+            <p class="py-5">
+              "Bon équilibre entre théorie et pratique. Les chapitres sont
+              détaillés, et le support et les corrections automatiques ont
+              vraiment aidé. Idéal pour démarrer et progresser rapidement."
+            </p>
+
+            <div class="flex items-center gap-5">
+              <img class="h-10 w-10 rounded-full" src="assets/camille.png" alt="photo d'une cliente" />
+              <h5>Camille</h5>
+            </div>
           </div>
         </div>
+
+
+
       </div>
     </section>
 
