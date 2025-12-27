@@ -3,10 +3,7 @@
 
 @theme {
     --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-}
-
-@theme {
-    --background-image-hero: url('../assets/Hero.webp');
+    --background-image-hero: url('../assets/hero.webp');
     --background-image-formRecente: url('../assets/formRecente.webp');
     --color-sage: #001F3D;
 }
