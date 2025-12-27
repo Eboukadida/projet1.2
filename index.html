@@ -371,9 +371,9 @@
       <div class="flex w-full justify-center text-center text-3xl font-bold">
         <h3 class="my-16 font-black text-sage uppercase">Avis clients</h3>
       </div>
-      <div class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2">
+      <div class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:gap-24 lg:grid-cols-2">
         <!-- Card Avis 1 -->
-        <div data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+        <div data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1000">
           <div
             class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105! hover:bg-white/10 xl:w-lg">
             <div>
@@ -402,7 +402,7 @@
 
         <!-- Card Avis 2 -->
 
-        <div data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+        <div data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1000">
           <div
             class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10 xl:w-lg">
             <div>
@@ -573,6 +573,52 @@
 
 
       </div>
+    </section>
+
+
+    <!-- Nous contacter -->
+    <section class="py-32 bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-contact)] bg-cover bg-center bg-no-repeat lg:bg-fixed">
+      
+      <div class="container px-4 mx-auto">
+        <div class="mx-auto">
+          <div class="max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-8 py-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur-3xl">
+            <h2 class="text-2xl font-semibold text-mywhite mb-4">Nous contacter</h2>
+            <form>
+              <div class="mb-4">
+                <input
+                  class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
+                  placeholder="Nom" type="text" />
+              </div>
+              <div class="mb-4">
+                <input
+                  class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
+                  placeholder="Email" name="email" id="email" type="email" />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite resize-none"
+                  rows="4" placeholder="Votre message" name="message" id="message"></textarea>
+              </div>
+              <button
+                class="w-full bg-myCTA text-mywhite py-2 px-4 rounded-lg"
+                type="submit">
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-mywhite my-6 text-center font-normal text-xl">Suivez - nous</p>
+        <div class="flex gap-6 justify-center">
+          <img src="assets/facebook.svg" alt="">
+          <img src="assets/X.svg" alt="">
+          <img src="assets/insta.svg" alt="">
+          <img src="assets/link.svg" alt="">
+        </div>
+      </div>
+
     </section>
 
 
