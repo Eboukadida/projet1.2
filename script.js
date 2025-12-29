@@ -13,4 +13,3 @@ window.addEventListener('load', function() {
         history.replaceState(null, null, window.location.pathname);
     }
 });
-
