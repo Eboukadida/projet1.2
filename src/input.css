@@ -8,9 +8,10 @@
   --background-image-become: url("../assets/become.png");
   --background-image-apropos: url("../assets/apropos.png");
   --background-image-contact: url("../assets/contact.webp");
-  --color-sage: #4a5d4e;
+  --color-vertFonce: #4a5d4e;
   --color-mywhite: #ffffff;
-  --color-myCTA: #14843f;
+  --color-vertClair: #13843F;
+   --color-beige: #FBF6E9;
 }
 
 @layer base {

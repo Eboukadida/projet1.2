@@ -12,7 +12,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body class="bg-mywhite">
+<body class="bg-beige">
+
+  <!-- Header -->
   <header class="flex justify-center">
     <nav
       class="fixed top-10 z-50 flex w-[90%] max-w-7xl items-center justify-between rounded-4xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur-md">
@@ -28,10 +30,10 @@
       </div>
 
       <div class="hidden lg:block">
-        <a class="mr-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-mywhite shadow-lg backdrop-blur-md hover:bg-white/50"
+        <a class="mr-3 rounded-2xl border border-white/20 bg-white/10 p-4 text-mywhite shadow-lg backdrop-blur-md hover:bg-vertClair transition duration-500 cursor-pointer"
           href="">Connexion</a>
 
-        <a class="rounded-2xl border border-white/20 bg-myCTA p-4 text-mywhite shadow-lg backdrop-blur-md hover:bg-white/50"
+        <a class="rounded-2xl border border-white/20 bg-vertClair p-4 text-mywhite shadow-lg backdrop-blur-md hover:bg-white/10 transition duration-500 cursor-pointer"
           href="">Inscription</a>
       </div>
 
@@ -41,15 +43,17 @@
     </nav>
   </header>
 
-  <main class="bg-mywhite">
+  <main class="bg-beige">
+
     <!-- Hero -->
+
     <section
-      class="flex min-h-screen overflow-x-hidden flex-col justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-heroEtformRecente)] bg-cover bg-center px-10 lg:bg-fixed relative">
+      class="flex min-h-screen overflow-x-hidden flex-col justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-heroEtformRecente)] bg-cover bg-center px-10 lg:bg-fixed relative bg-beige">
       <div class="my-auto sm:py-56">
         <h2
           class="mb-8 uppercase text-center text-3xl font-bold text-mywhite [@media(max-width:375px)]:text-xl lg:text-5xl"
           data-aos="fade-up" data-aos-duration="2000">
-          <span class="text-myCTA">Klivio</span>, l’allié de votre progression
+          <span class="text-[#14843f]">Klivio</span>, l’allié de votre progression
         </h2>
         <h1
           class="flex justify-center pb-16 text-center text-2xl font-medium text-mywhite uppercase [@media(max-width:375px)]:text-lg lg:text-4xl"
@@ -58,14 +62,16 @@
         </h1>
 
         <div class="flex w-full flex-col items-center sm:pb-32">
-          <a href="#formationPopulaires"
-            class="flex justify-center rounded-2xl border border-white/20 bg-white/10 px-4 py-3 font-light text-xs text-center sm:text-base text-mywhite shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 uppercase tracking-widest"
-            data-aos="fade-up" data-aos-duration="3000">
-            En savoir plus
-          </a>
+          <div class="tracking-widest transition-transform duration-300 hover:scale-110">
+            <a href="#formationPopulaires"
+              class="flex justify-center rounded-2xl border border-white/20 bg-white/10 px-4 py-3 font-light text-xs text-center sm:text-base text-mywhite shadow-lg backdrop-blur-md uppercase"
+              data-aos="fade-up" data-aos-duration="3000">
+              En savoir plus
+            </a>
+          </div>
+
         </div>
       </div>
-
 
       <div class="flex flex-col items-center absolute bottom-6 sm:bottom-20 left-1/2 -translate-x-1/2">
         <span class="text-mywhite text-md mb-2 sm:mb-16 uppercase tracking-widest">Découvrir</span>
@@ -77,11 +83,11 @@
       </div>
     </section>
 
+    <!-- formation populaires -->
 
-
-    <section id="formationPopulaires" class="scroll-mt-64 bg-[#FBF6E9]">
+    <section id="formationPopulaires" class="scroll-mt-64 bg-beige">
       <div class="flex w-full justify-center text-center text-3xl font-bold">
-        <h3 class="my-16 font-black text-sage uppercase">
+        <h3 class="my-16 font-black text-vertFonce uppercase">
           Les formations <br />
           populaires
         </h3>
@@ -89,11 +95,14 @@
 
       <div
         class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+
         <!-- Card 1 -->
+
         <article class="w-96" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
-          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+          <div class="group w-full cursor-pointer p-5 text-vertFonce transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/public.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/public.webp" alt="photo d'une personne qui parle en publique"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -121,9 +130,10 @@
         <!-- Card 2 -->
 
         <article class="w-96" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
-          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+          <div class="group w-full cursor-pointer p-5 text-vertFonce transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/stress.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/stress.webp" alt="photo d'une personne qui stress"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -149,10 +159,12 @@
         </article>
 
         <!-- Card 3 -->
+
         <article class="w-96" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300">
-          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+          <div class="group w-full cursor-pointer p-5 text-vertFonce transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/equipe.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/equipe.webp" alt="photo d’une équipe qui travaille dans un bureau"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -178,10 +190,12 @@
         </article>
 
         <!-- Card 4 -->
+
         <article class="w-96" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="300">
-          <div class="group w-full cursor-pointer p-5 text-sage transition-transform duration-300 hover:scale-105">
+          <div class="group w-full cursor-pointer p-5 text-vertFonce transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/time.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/time.webp" alt="photo d'un mur avec ecrit time is precious"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -209,14 +223,16 @@
 
       <div class="mt-16 flex w-full flex-col items-center pb-16">
         <a href="#formationRecente"
-          class="flex justify-center rounded-2xl bg-myCTA p-4 font-medium text-mywhite shadow-lg transition-transform duration-300 hover:scale-105">
+          class="flex justify-center rounded-2xl bg-vertClair p-4 font-medium text-mywhite shadow-lg transition-transform duration-300 hover:scale-105">
           Voir plus de formations
         </a>
       </div>
     </section>
 
     <!-- formation recente -->
-    <section id="formationRecente" class="w-full scroll-mt-52 bg-heroEtformRecente bg-cover bg-center pb-32 lg:bg-fixed">
+
+    <section id="formationRecente"
+      class="w-full scroll-mt-52 bg-heroEtformRecente bg-cover bg-center pb-32 lg:bg-fixed">
       <div class="flex w-full justify-center text-center text-3xl font-bold">
         <h3 class="my-16 font-black text-mywhite uppercase">
           Les formations <br />
@@ -228,11 +244,13 @@
         class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
 
         <!-- Card 1 -->
+
         <article class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
           data-aos-duration="3000" data-aos-offset="300">
           <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/communication.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/communication.webp" alt="photo de deux personnes heureuses de travailler ensemble"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -262,11 +280,13 @@
         </article>
 
         <!-- Card 2 -->
+
         <article class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
           data-aos-duration="2500" data-aos-offset="300">
           <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/emotion.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/emotion.webp" alt="photo d'une personne en train de faire de la méditation"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -295,13 +315,14 @@
           </div>
         </article>
 
-
         <!-- Card 3 -->
+
         <article class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
           data-aos-duration="2000" data-aos-offset="300">
           <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/probleme.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/probleme.webp" alt="photo de trois personnes en train d’essayer de résoudre un problème"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -330,13 +351,14 @@
           </div>
         </article>
 
-
         <!-- Card 4 -->
+
         <article class="w-96 rounded-2xl border border-white/20 shadow-lg backdrop-blur-md" data-aos="fade-up"
           data-aos-duration="1500" data-aos-offset="300">
           <div class="group w-full h-full cursor-pointer p-5 transition-transform duration-300 hover:scale-105">
             <div class="relative mb-1 overflow-hidden rounded-lg">
-              <img src="assets/manager.webp" alt="" class="aspect-video bg-gray-400 object-cover object-center" />
+              <img src="assets/manager.webp" alt="photo d’un manager qui sourit avec son équipe"
+                class="aspect-video bg-gray-400 object-cover object-center" />
               <span
                 class="absolute top-2 left-2 flex items-center gap-1.5 rounded-full border border-white/10 bg-gray-950/20 px-3 py-1 leading-none text-gray-50 backdrop-blur-sm">
                 <span class="text-xs">15,99€</span>
@@ -364,26 +386,28 @@
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
     <!-- section avis -->
-    <section class="bg-[#FBF6E9] pb-32">
+
+    <section class="bg-beige pb-32">
       <div class="flex w-full justify-center text-center text-3xl font-bold">
-        <h3 class="my-16 font-black text-sage uppercase">Avis clients</h3>
+        <h3 class="my-16 font-black text-vertFonce uppercase">Avis clients</h3>
       </div>
       <div class="mx-auto grid max-w-fit grid-cols-1 justify-items-center gap-8 lg:gap-24 lg:grid-cols-2">
+
         <!-- Card Avis 1 -->
+
         <article data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="500">
           <div
-            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105! hover:bg-white/10 xl:w-lg">
+            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-vertFonce shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105! hover:bg-white/10 xl:w-lg">
             <div>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
             </div>
 
             <p class="py-5">
@@ -401,18 +425,17 @@
           </div>
         </article>
 
-
         <!-- Card Avis 2 -->
 
         <article data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="500">
           <div
-            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-sage shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10 xl:w-lg">
+            class="group flex w-96 h-full cursor-pointer flex-col justify-between rounded-2xl border border-white/20 p-5 text-vertFonce shadow-lg backdrop-blur-md transition-transform duration-300 hover:scale-105 hover:bg-white/10 xl:w-lg">
             <div>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
+              <i class="fa fa-star" style="color: #ffc700"></i>
             </div>
 
             <p class="py-5">
@@ -427,21 +450,14 @@
             </div>
           </div>
         </article>
-
-
-
       </div>
     </section>
-
-
-
 
     <!-- section avantages -->
     <section
       class="h-175 lg:bg-fixed bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-avantages)] bg-center bg-cover bg-no-repeat">
       <div
         class="h-full w-full xl:w-[50%] border border-white/20 bg-white/10 shadow-lg backdrop-blur-md flex flex-col items-center justify-center">
-
 
         <ul class="flex flex-col gap-5 px-9 text-mywhite justify-center text-base md:text-xl xl:text-2xl">
 
@@ -494,14 +510,12 @@
             </p>
           </li>
         </ul>
-
       </div>
     </section>
 
-
     <!-- Créez vos formations avec Klivio -->
     <section
-      class="h-175 lg:bg-fixed bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-become)] bg-cover bg-center bg-no-repeat flex justify-end">
+      class="h-175 lg:bg-fixed bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),var(--background-image-become)] bg-cover bg-center bg-no-repeat flex justify-end">
       <div
         class="h-full w-full xl:w-[50%] border border-white/20 bg-white/10 shadow-lg backdrop-blur-md flex flex-col items-center justify-center">
 
@@ -553,10 +567,10 @@
 
     <!-- section a Propos -->
 
-    <section class="h-175 lg:bg-fixed bg-apropos bg-center bg-no-repeat bg-cover">
+    <section
+      class="h-175 lg:bg-fixed bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-apropos)] bg-center bg-no-repeat bg-cover">
       <div
         class="h-full w-full xl:w-[50%] border border-white/20 bg-white/10 shadow-lg backdrop-blur-md flex flex-col items-center justify-center">
-
         <div
           class="flex flex-col gap-6 md:gap-16 text-white justify-center sm:max-w-3xl text-base sm:text-xl md:text-2xl xl:text-2xl px-6">
           <h3 class="uppercase font-black whitespace-normal text-2xl md:text-4xl xl:text-5xl">À propos de Klivio</h3>
@@ -574,16 +588,15 @@
             équitable,
             guidant notre mission d'offrir des pportunités d'apprentissage de qualité.</p>
         </div>
-
-
       </div>
     </section>
   </main>
 
   <!-- Nous contacter -->
+
   <section
     class="pt-16 px-4 pb-16 bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),var(--background-image-contact)] bg-cover bg-center bg-no-repeat lg:bg-fixed">
-  
+
     <h3 class="uppercase text-center mb-16 font-black text-mywhite text-2xl sm:text-3xl md:text-4xl xl:text-5xl">
       Nous contacter
     </h3>
@@ -595,20 +608,22 @@
           <form>
             <div class="mb-4">
               <input
-                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
+                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-vertClair border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
                 placeholder="Nom" type="text" />
             </div>
             <div class="mb-4">
               <input
-                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
+                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-vertClair border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite"
                 placeholder="Email" name="email" id="email" type="email" />
             </div>
             <div class="mb-4">
               <textarea
-                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-myCTA border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite resize-none"
+                class="w-full px-4 py-2 rounded-lg outline-none focus:ring-2 focus:ring-vertClair border border-mywhite bg-transparent text-mywhite placeholder:text-mywhite resize-none"
                 rows="4" placeholder="Votre message" name="message" id="message"></textarea>
             </div>
-            <button class="w-full bg-myCTA text-mywhite py-2 px-4 rounded-lg" type="submit">
+            <button
+              class="w-full bg-vertClair text-mywhite py-2 px-4 rounded-lg hover:bg-white/50 transition duration-500 cursor-pointer"
+              type="submit">
               Envoyer
             </button>
           </form>
@@ -617,21 +632,24 @@
     </div>
 
     <!-- Footer -->
+
     <footer class="mt-32">
       <nav
         class="flex flex-col gap-10 max-w-[80%] mx-auto py-8 text-mywhite items-center rounded-4xl border border-white/20 bg-white/10 shadow-lg backdrop-blur-md md:gap-5">
 
-
         <img class="w-36 px-4" src="assets/logo.png" alt="logo Klivio">
-
 
         <div class="hidden md:block">
           <p class="text-mywhite font-normal text-center mb-4 text-xl">Suivez - nous</p>
           <div class="flex gap-6">
-            <a href=""><img class="cursor-pointer" src="assets/facebook.svg" alt="logo facebook"></a>
-            <a href=""><img class="cursor-pointer" src="assets/X.svg" alt="logo x"></a>
-            <a href=""><img class="cursor-pointer" src="assets/insta.svg" alt="logo insta"></a>
-            <a href=""><img class="cursor-pointer" src="assets/link.svg" alt="logo linkedin"></a>
+            <a class="transition-transform duration-300 hover:scale-120" href=""><img class="cursor-pointer"
+                src="assets/facebook.svg" alt="logo facebook"></a>
+            <a class="transition-transform duration-300 hover:scale-120" href=""><img class="cursor-pointer"
+                src="assets/X.svg" alt="logo x"></a>
+            <a class="transition-transform duration-300 hover:scale-120" href=""><img class="cursor-pointer"
+                src="assets/insta.svg" alt="logo insta"></a>
+            <a class="transition-transform duration-300 hover:scale-120" href=""><img class="cursor-pointer"
+                src="assets/link.svg" alt="logo linkedin"></a>
           </div>
         </div>
 
@@ -642,30 +660,32 @@
             <p class="font-bold text-center [@media(max-width:375px)]:text-sm md:hidden">Coordonnées</p>
             <li class="flex gap-2">
               <img src="assets/marker-02.svg" alt="icon gps" class="w-7 h-7">
-              <a href="https://www.google.com/maps/search/?api=1&query=1+place+republique+75003+Paris" target="_blank">1
+              <a class="hover:underline hover:text-white/80 transition-colors"
+                href="https://www.google.com/maps/search/?api=1&query=1+place+republique+75003+Paris" target="_blank">1
                 place république, <br> 75003 Paris</a>
             </li>
             <li class="flex justify-start gap-2">
               <img src="assets/phone.svg" alt="icon telephone" class="w-7 h-7">
-              <a href="tel:+33102030405">01.02.03.04.05</a>
+              <a class="hover:underline hover:text-white/80 transition-colors"
+                href="tel:+33102030405">01.02.03.04.05</a>
             </li>
             <li class="flex justify-start gap-2">
               <img src="assets/mail-01.svg" alt="icon mail" class="w-7 h-7">
-              <a href="mailto:contact@klivio.fr">contact@klivio.fr</a>
+              <a class="hover:underline hover:text-white/80 transition-colors"
+                href="mailto:contact@klivio.fr">contact@klivio.fr</a>
             </li>
           </ul>
 
-
           <div class="hidden md:flex flex-col gap-2">
-            <a href="">Accueil</a>
-            <a href="">Nos solutions</a>
-            <a href="">Qui sommes-nous ?</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Accueil</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Nos solutions</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Qui sommes-nous ?</a>
           </div>
 
           <div class="hidden md:flex flex-col gap-2">
-            <a href="">Offres d'emploi</a>
-            <a href="">Devenir formateur</a>
-            <a href="">Témoignages clients</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Offres d'emploi</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Devenir formateur</a>
+            <a class="hover:underline hover:text-white/80 transition-colors" href="">Témoignages clients</a>
           </div>
 
         </div>
@@ -675,23 +695,14 @@
 
           <ul class="text-center flex gap-2 flex-col [@media(max-width:375px)]:text-xs md:flex-row md:gap-3">
             <p class="font-bold [@media(max-width:375px)]:text-sm md:hidden">Mentions légales</p>
-            <li><a href="">CGU</a></li>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Confidentialité</a></li>
+            <li><a class="hover:underline hover:text-white/80 transition-colors" href="">CGU</a></li>
+            <li><a class="hover:underline hover:text-white/80 transition-colors" href="">Cookies</a></li>
+            <li><a class="hover:underline hover:text-white/80 transition-colors" href="">Confidentialité</a></li>
           </ul>
         </div>
-
       </nav>
     </footer>
-
-
-
   </section>
-
-
-
-
-
 
   <script>
     AOS.init({
