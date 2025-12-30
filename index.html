@@ -7,12 +7,12 @@
   <title>Klivio-Tailwind</title>
   <link rel="stylesheet" href="dist/output.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="preload" as="image" href="assets/formRecente.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/heroEtformRecente.webp" fetchpriority="high" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
+<body class="bg-mywhite">
   <header class="flex justify-center">
     <nav
       class="fixed top-10 z-50 flex w-[90%] max-w-7xl items-center justify-between rounded-4xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur-md">
@@ -44,7 +44,7 @@
   <main class="bg-mywhite">
     <!-- Hero -->
     <section
-      class="flex min-h-screen overflow-x-hidden flex-col justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-formRecente)] bg-cover bg-center px-10 lg:bg-fixed relative">
+      class="flex min-h-screen overflow-x-hidden flex-col justify-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),var(--background-image-heroEtformRecente)] bg-cover bg-center px-10 lg:bg-fixed relative">
       <div class="my-auto sm:py-56">
         <h2
           class="mb-8 uppercase text-center text-3xl font-bold text-mywhite [@media(max-width:375px)]:text-xl lg:text-5xl"
@@ -216,7 +216,7 @@
     </section>
 
     <!-- formation recente -->
-    <section id="formationRecente" class="w-full scroll-mt-52 bg-formRecente bg-cover bg-center pb-32 lg:bg-fixed">
+    <section id="formationRecente" class="w-full scroll-mt-52 bg-heroEtformRecente bg-cover bg-center pb-32 lg:bg-fixed">
       <div class="flex w-full justify-center text-center text-3xl font-bold">
         <h3 class="my-16 font-black text-mywhite uppercase">
           Les formations <br />
@@ -445,26 +445,25 @@
 
         <ul class="flex flex-col gap-5 px-9 text-mywhite justify-center text-base md:text-xl xl:text-2xl">
 
-          <h3 class="uppercase font-black mb-8 text-mywhite text-2xl md:text-4xl xl:text-5xl" data-aos="flip-up"
-            data-aos-duration="1500">
+          <h3 class="uppercase font-black mb-8 text-mywhite text-2xl md:text-4xl xl:text-5xl">
             Les avantages Klivio
           </h3>
 
-          <li class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2000">
+          <li class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/arrow-up-right.svg" alt="icon fleche">
             <p>
               Suivi de sa progression
             </p>
           </li>
 
-          <li class="flex gap-2" data-aos="flip-up" data-aos-duration="2100">
+          <li class="flex gap-2">
             <img class="h-7 w-7" src="assets/edit-01.svg" alt="icon stylo">
             <p class="flex">
               Exercices et QCM pour la mise en pratique
             </p>
           </li>
 
-          <li class="flex gap-2" data-aos="flip-up" data-aos-duration="2200">
+          <li class="flex gap-2">
             <img class="h-7 w-7" src="assets/download-02.svg" alt="icon telechargement">
             <p class="flex">
               Possibilité de télécharger/imprimer les formations
@@ -472,7 +471,7 @@
             </p>
           </li>
 
-          <li class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2300">
+          <li class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/star-02.svg" alt="icon d'une etoile">
             <p class="flex">
               Contenu qualitatif et vérifié
@@ -480,7 +479,7 @@
             </p>
           </li>
 
-          <li class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2400">
+          <li class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/clock-backward.svg" alt="icon d'une horloge">
             <p class="flex">
               Suivi en autonomie, 24h/24, 7j/7
@@ -488,7 +487,7 @@
             </p>
           </li>
 
-          <li class="flex gap-2" data-aos="flip-up" data-aos-duration="2500">
+          <li class="flex gap-2">
             <img class="h-7 w-7" src="assets/annotation-typing.svg" alt="icon message">
             <p class="flex whitespace-normal">
               Espaces d’échanges dédiés pour poser ses <br> questions sur les formations
@@ -508,34 +507,32 @@
 
         <ul class="flex flex-col gap-5 px-9 text-mywhite justify-center sm:max-w-3xl text-base md:text-xl xl:text-2xl">
 
-          <h3 class="uppercase font-black mb-8 text-mywhite whitespace-normal text-2xl md:text-4xl xl:text-5xl"
-            data-aos="flip-up" data-aos-duration="1500">
+          <h3 class="uppercase font-black mb-8 text-mywhite whitespace-normal text-2xl md:text-4xl xl:text-5xl">
             Créez vos formations avec Klivio
           </h3>
 
-          <li class="flex items-center gap-2" class="flex items-center gap-2" data-aos="flip-up"
-            data-aos-duration="2000">
+          <li class="flex items-center gap-2" class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/coin-hand.svg" alt="icon fleche">
             <p>
               Commission unique, au pourcentage sur les ventes
             </p>
           </li>
 
-          <li class="flex gap-2" class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2100">
+          <li class="flex gap-2" class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/heart.svg" alt="icon stylo">
             <p class="flex">
               Mise en avant sur la plateforme
             </p>
           </li>
 
-          <li class="flex gap-2" class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2200">
+          <li class="flex gap-2" class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/pencil-01.svg" alt="icon telechargement">
             <p class="flex">
               Contrôle total sur le cours : contenu, prix
             </p>
           </li>
 
-          <li class="flex gap-2" class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2300">
+          <li class="flex gap-2" class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/settings.svg" alt="icon d'une etoile">
             <p class="flex">
               Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices, vidéos,
@@ -544,7 +541,7 @@
             </p>
           </li>
 
-          <li class="flex gap-2" class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2400">
+          <li class="flex gap-2" class="flex items-center gap-2">
             <img class="h-7 w-7" src="assets/user-profile-square.svg" alt="icon d'une horloge">
             <p class="flex">
               Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits d’auteur
@@ -561,16 +558,15 @@
         class="h-full w-full xl:w-[50%] border border-white/20 bg-white/10 shadow-lg backdrop-blur-md flex flex-col items-center justify-center">
 
         <div
-          class="flex flex-col gap-6 md:gap-16 text-white justify-center sm:max-w-3xl text-sm sm:text-xl md:text-2xl xl:text-2xl px-6">
-          <h3 class="uppercase font-black whitespace-normal text-2xl md:text-4xl xl:text-5xl" data-aos="flip-up"
-            data-aos-duration="1500">À propos de Klivio</h3>
-          <p class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2000">Chez Klivio, nous défendons des
+          class="flex flex-col gap-6 md:gap-16 text-white justify-center sm:max-w-3xl text-base sm:text-xl md:text-2xl xl:text-2xl px-6">
+          <h3 class="uppercase font-black whitespace-normal text-2xl md:text-4xl xl:text-5xl">À propos de Klivio</h3>
+          <p class="flex items-center gap-2">Chez Klivio, nous défendons des
             valeurs fondamentales qui définissent notre approche éducative. Nous nous
             engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de
             leur
             travail.</p>
 
-          <p class="flex items-center gap-2" data-aos="flip-up" data-aos-duration="2500">Favorisant l'autonomie
+          <p class="flex items-center gap-2">Favorisant l'autonomie
             d'apprentissage, notre plateforme offre la flexibilité écessaire pour explorer
             divers
             sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que
@@ -586,13 +582,16 @@
 
   <!-- Nous contacter -->
   <section
-    class="pt-32 pb-16 bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),var(--background-image-contact)] bg-cover bg-center bg-no-repeat lg:bg-fixed">
+    class="pt-16 px-4 pb-16 bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),var(--background-image-contact)] bg-cover bg-center bg-no-repeat lg:bg-fixed">
+  
+    <h3 class="uppercase text-center mb-16 font-black text-mywhite text-2xl sm:text-3xl md:text-4xl xl:text-5xl">
+      Nous contacter
+    </h3>
 
-    <div class="container px-4 mx-auto">
-      <div class="mx-auto">
-        <div
-          class="max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-8 py-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur-3xl">
-          <h2 class="text-2xl font-semibold text-mywhite mb-4">Nous contacter</h2>
+    <div class="max-w-[95%] md:max-w-[50%] px-2 mx-auto">
+      <div class="mx-auto w-full">
+        <div class="w-full mx-auto px-8 py-6 rounded-2xl border border-white/20 shadow-lg backdrop-blur-3xl">
+
           <form>
             <div class="mb-4">
               <input
@@ -617,68 +616,75 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer class="mt-32">
       <nav
-        class="w-full m-5 h-auto max-w-[80%] mx-auto rounded-4xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur-md">
+        class="flex flex-col gap-10 max-w-[80%] mx-auto py-8 text-mywhite items-center rounded-4xl border border-white/20 bg-white/10 shadow-lg backdrop-blur-md md:gap-5">
 
-        <div class="flex justify-between items-center border-b-2 border-white/20 pb-8 m-8">
 
-          <div>
-            <img class="w-44 mt-4" src="assets/logo.png" alt="logo de Klivio">
-          </div>
+        <img class="w-36 px-4" src="assets/logo.png" alt="logo Klivio">
 
-          <div>
-            <p class="text-mywhite font-normal text-center mb-4 text-xl">Suivez - nous</p>
-            <div class="flex gap-6">
-              <a href=""><img class="cursor-pointer" src="assets/facebook.svg" alt="logo facebook"></a>
-              <a href=""><img class="cursor-pointer" src="assets/X.svg" alt="logo x"></a>
-              <a href=""><img class="cursor-pointer" src="assets/insta.svg" alt="logo insta"></a>
-              <a href=""><img class="cursor-pointer" src="assets/link.svg" alt="logo linkedin"></a>
-            </div>
-          </div>
 
-          <div class="text-mywhite flex justify-between gap-24">
-            <div class="flex flex-col gap-2">
-              <a href="">Accueil</a>
-              <a href="">Nos solutions</a>
-              <a href="">Qui sommes-nous ?</a>
-            </div>
-
-            <div class="flex flex-col gap-2">
-              <a href="">Offres d'emploi</a>
-              <a href="">Devenir formateur</a>
-              <a href="">Témoignages clients</a>
-            </div>
+        <div class="hidden md:block">
+          <p class="text-mywhite font-normal text-center mb-4 text-xl">Suivez - nous</p>
+          <div class="flex gap-6">
+            <a href=""><img class="cursor-pointer" src="assets/facebook.svg" alt="logo facebook"></a>
+            <a href=""><img class="cursor-pointer" src="assets/X.svg" alt="logo x"></a>
+            <a href=""><img class="cursor-pointer" src="assets/insta.svg" alt="logo insta"></a>
+            <a href=""><img class="cursor-pointer" src="assets/link.svg" alt="logo linkedin"></a>
           </div>
         </div>
 
-        <div class="flex justify-between text-mywhite pb-8 m-8">
-          <p>© Klivio - 2025</p>
+        <div class="border-b-2 border-white/20 h-1 w-[90%] hidden md:block"></div>
 
-          <ul class="flex gap-8 items-center">
-            <li class="flex justify-center gap-5">
-              <img src="assets/marker-02.svg" alt="">
-              <p>1 place république,75003 Paris</p>
+        <div class="md:flex md:justify-between gap-12 px-2 xl:gap-24 md:mb-6">
+          <ul class="flex flex-col gap-2 [@media(max-width:375px)]:text-xs px-2">
+            <p class="font-bold text-center [@media(max-width:375px)]:text-sm md:hidden">Coordonnées</p>
+            <li class="flex gap-2">
+              <img src="assets/marker-02.svg" alt="icon gps" class="w-7 h-7">
+              <a href="https://www.google.com/maps/search/?api=1&query=1+place+republique+75003+Paris" target="_blank">1
+                place république, <br> 75003 Paris</a>
             </li>
-            <li class="flex justify-between gap-5">
-              <img src="assets/phone.svg" alt="">
-              <p>01.02.03.04.05</p>
+            <li class="flex justify-start gap-2">
+              <img src="assets/phone.svg" alt="icon telephone" class="w-7 h-7">
+              <a href="tel:+33102030405">01.02.03.04.05</a>
             </li>
-            <li class="flex justify-center gap-5">
-              <img src="assets/mail-01.svg" alt="">
-              <p>contact@klivio.fr</p>
+            <li class="flex justify-start gap-2">
+              <img src="assets/mail-01.svg" alt="icon mail" class="w-7 h-7">
+              <a href="mailto:contact@klivio.fr">contact@klivio.fr</a>
             </li>
           </ul>
 
-          <ul class="flex justify-center items-center gap-5">
-            <li>CGU</li>
-            <li>Confidentialité</li>
-            <li>Cookies</li>
+
+          <div class="hidden md:flex flex-col gap-2">
+            <a href="">Accueil</a>
+            <a href="">Nos solutions</a>
+            <a href="">Qui sommes-nous ?</a>
+          </div>
+
+          <div class="hidden md:flex flex-col gap-2">
+            <a href="">Offres d'emploi</a>
+            <a href="">Devenir formateur</a>
+            <a href="">Témoignages clients</a>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center md:justify-between w-full md:w-[90%]">
+          <p class="hidden md:block">© Klivio - 2025</p>
+
+          <ul class="text-center flex gap-2 flex-col [@media(max-width:375px)]:text-xs md:flex-row md:gap-3">
+            <p class="font-bold [@media(max-width:375px)]:text-sm md:hidden">Mentions légales</p>
+            <li><a href="">CGU</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Confidentialité</a></li>
           </ul>
         </div>
 
       </nav>
     </footer>
+
+
 
   </section>
 
