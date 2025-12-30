@@ -14,13 +14,12 @@
 }
 
 @layer base {
-  html {
+  html,
+  body {
+    overscroll-behavior-y: none;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  body {
     overflow-x: hidden;
     position: relative;
     width: 100%;
