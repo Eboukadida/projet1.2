@@ -10,8 +10,10 @@
   --background-image-contact: url("../assets/contact.webp");
   --color-vertFonce: #4a5d4e;
   --color-mywhite: #ffffff;
-  --color-vertClair: #13843F;
-   --color-beige: #FBF6E9;
+  --color-vertClair: #13843f;
+  --color-beige: #fbf6e9;
+  --cursor-main: url("../assets/cursor.svg"), default;
+  --cursor-custom: url('../assets/cursor-pointer.svg'), pointer;
 }
 
 @layer base {
@@ -24,5 +26,12 @@
     overflow-x: hidden;
     position: relative;
     width: 100%;
+    @apply cursor-main;
+  }
+}
+
+@layer base{
+  a{
+    @apply cursor-custom;
   }
 }
